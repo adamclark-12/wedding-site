@@ -1,0 +1,73 @@
+// Fonts
+@font-face {
+  font-family: "calligraffitiregular";
+  src: url("./Fonts/Calligraffiti-webfont.woff") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "aaarghnormal";
+  src: url("./Fonts/Aaargh-webfont.woff") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+$mainHeaderFont: "calligraffitiregular";
+$mainFont: "aaarghnormal";
+
+//colours
+$backgroundColour: whitesmoke;
+$mainTextColour: #2b283a;
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-image: url("../public/background.png");
+  font-family: $mainFont;
+  line-height: 1.6;
+  text-align: center;
+  color: $mainTextColour;
+  margin: 0;
+}
+
+.title-contianer {
+  margin: 0px;
+  padding: 45px 0px;
+  font-family: $mainHeaderFont;
+  display: flex;
+  flex-direction: column;
+}
+.contianer {
+  width: 66%;
+  background-color: $backgroundColour;
+  margin: 10px;
+  padding: 45px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  width: 66%;
+  background-color: $backgroundColour;
+  padding: 45px 0px;
+  font-family: $mainFont;
+  margin: 0;
+}
+
+h1 {
+  font-size: 80px;
+  color: black;
+  margin: 0;
+}
+
+h3 {
+  font-size: 64px;
+  margin: 0;
+}
+
+.App {
+  align-items: center;
+}
