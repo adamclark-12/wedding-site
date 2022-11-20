@@ -1,7 +1,7 @@
 // Fonts
 @font-face {
-  font-family: "calligraffitiregular";
-  src: url("./Fonts/Calligraffiti-webfont.woff") format("woff2");
+  font-family: "journal";
+  src: url("./Fonts/journal-webfont.woff") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -12,8 +12,13 @@
   font-weight: normal;
   font-style: normal;
 }
-$mainHeaderFont: "calligraffitiregular";
+$titleFont: "journal";
 $mainFont: "aaarghnormal";
+
+@mixin insetBorders {
+  outline: 3px solid #2b283a;
+  outline-offset: -20px;
+}
 
 //colours
 $backgroundColour: whitesmoke;
@@ -22,31 +27,56 @@ $mainTextColour: #2b283a;
 .App {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-
 body {
   background-image: url("../public/background.png");
   font-family: $mainFont;
-  line-height: 1.6;
+  line-height: 1.8;
   text-align: center;
   color: $mainTextColour;
   margin: 0;
 }
 
 .title-contianer {
-  margin: 0px;
-  padding: 45px 0px;
-  font-family: $mainHeaderFont;
+  margin: 20px;
+  padding: 20px 0px;
+  font-family: $titleFont;
   display: flex;
   flex-direction: column;
+  @include insetBorders;
 }
+.title-h1 {
+  margin: 0;
+  font-size: 100px;
+  font-weight: lighter;
+}
+
+.title-h3 {
+  transform: translateY(-2.1rem);
+  font-size: 50px;
+  font-family: $titleFont;
+}
+
 .contianer {
-  width: 66%;
+  @include insetBorders;
+  width: 63%;
   background-color: $backgroundColour;
-  margin: 10px;
+  margin: 20px;
   padding: 45px 0px;
   display: flex;
   justify-content: center;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+li {
+  display: inline;
+  margin-left: 2em;
 }
 
 header {
@@ -58,7 +88,7 @@ header {
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 60px;
   color: black;
   margin: 0;
 }
@@ -68,6 +98,11 @@ h3 {
   margin: 0;
 }
 
-.App {
-  align-items: center;
+span {
+  text-decoration: underline;
+}
+
+p {
+  font-size: 20px;
+  font-family: $mainFont;
 }

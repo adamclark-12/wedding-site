@@ -1,17 +1,60 @@
 import React from "react";
+import { MdLocalTaxi } from "react-icons/md";
 
 export const Travel = () => {
   return (
     <div className="contianer">
       <section>
-        <h1>TRAVEL</h1>
-        <p>TRAVEL</p>
+        <h1>TRAVEL - TO</h1>
+
+        <p className="travel-p">
+          The venue adress is:
+          <span>
+            <br /> Winters Tale Country Barn,
+            <br />
+            Old Blackmore Hill,
+            <br /> Calvert Road,
+            <br /> Buckingham MK18 2HA
+          </span>
+          <br />
+          There is plenty of on-site parking
+          <br /> and you can leave your car there up to <br />
+          <span>11am</span> on the sunday after.
+        </p>
+        <p className="travel-p">
+          Below you will find a map to the venue.
+          <br /> If you have what3words then <br />
+          <a href="https://w3w.co/remind.stopwatch.arrive">
+            {" "}
+            <span>(///remind.stopwatch.arrive)</span>
+          </a>
+          <br />
+          will get you right to the front door!
+          <br />
+        </p>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19685.804917315774!2d-0.9898341801784837!3d51.92071701904166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876e4a46413ab33%3A0x60fad75e2635f819!2sWinters%20Tale%20Country%20Barn!5e0!3m2!1sen!2suk!4v1668636950798!5m2!1sen!2suk"
           width="600"
           height="450"
           loading="lazy"
         ></iframe>
+        <br />
+        <h1>TRAVEL - FROM</h1>
+        <p>
+          Here are some local taxi companies and their contact info <br />
+          Booking in advance is advised
+        </p>
+        <ul>
+          <li>
+            <MdLocalTaxi /> Falcon Taxis
+          </li>
+          <li>
+            <MdLocalTaxi /> Neales Taxis
+          </li>
+          <li>
+            <MdLocalTaxi /> ABC Taxis
+          </li>
+        </ul>
       </section>
     </div>
   );
