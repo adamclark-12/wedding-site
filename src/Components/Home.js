@@ -13,6 +13,12 @@ export const Home = () => {
         <br /> We hope you can make it and celebrate with us on our big day!
         <br />
         <br />
+        <img src="weddingTimeline.jpg" alt="Wedding timeline"></img>
+        <br />
+        <span className="bold-span">
+          Get your beautiful selves there 20-30 minutes before kick off!
+        </span>
+        <br />
         Love
         <br />
         Fiona and Adam

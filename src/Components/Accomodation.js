@@ -14,13 +14,19 @@ export const Accomodation = () => {
         </p>
         <ul>
           <li>
-            <MdLocalHotel /> Aylesbury
+            <a href="https://goo.gl/maps/EF5eZLEjP55qiwvT9">
+              <MdLocalHotel /> Aylesbury
+            </a>
           </li>
           <li>
-            <MdLocalHotel /> Bicester
+            <a href="https://goo.gl/maps/vi24ppZtqZ6KNhc68">
+              <MdLocalHotel /> Bicester
+            </a>
           </li>
           <li>
-            <MdLocalHotel /> Buckingham
+            <a href="https://goo.gl/maps/nERC92NjZ5yq9vZr9">
+              <MdLocalHotel /> Buckingham
+            </a>
           </li>
         </ul>
       </section>

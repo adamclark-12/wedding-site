@@ -13,7 +13,9 @@ export const Gifts = () => {
           it would be most appreciated <br />
           <br />
           This link should do the job. <br />
-          <a href="PayPal.Me/fionaandadamswedding">F & A wedding fund</a>
+          <a className="gifts-button" href="PayPal.Me/fionaandadamswedding">
+            F & A wedding fund
+          </a>
         </p>
       </section>
     </div>

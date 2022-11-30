@@ -1,32 +1,37 @@
 import React from "react";
 import { MdLocalTaxi } from "react-icons/md";
+import { FaArrowDown } from "react-icons/fa";
 
 export const Travel = () => {
   return (
     <div className="contianer">
       <section>
         <h1>TRAVEL - TO</h1>
-
         <p className="travel-p">
           The venue adress is:
-          <span>
-            <br /> Winters Tale Country Barn,
-            <br />
-            Old Blackmore Hill,
-            <br /> Calvert Road,
-            <br /> Buckingham MK18 2HA
-          </span>
+          <a href="https://goo.gl/maps/5QmbBqsJ2ksWKtV26">
+            {" "}
+            <span className="bold-span">
+              <br />
+              <br /> Winters Tale Country Barn,
+              <br />
+              Old Blackmore Hill,
+              <br /> Calvert Road,
+              <br /> Buckingham MK18 2HA
+            </span>
+          </a>
+          <br />
           <br />
           There is plenty of on-site parking
           <br /> and you can leave your car there up to <br />
-          <span>11am</span> on the sunday after.
+          <span className="underline-span">11am</span> on the sunday after.
         </p>
         <p className="travel-p">
           Below you will find a map to the venue.
           <br /> If you have what3words then <br />
           <a href="https://w3w.co/remind.stopwatch.arrive">
             {" "}
-            <span>(///remind.stopwatch.arrive)</span>
+            <span className="underline-span">(///remind.stopwatch.arrive)</span>
           </a>
           <br />
           will get you right to the front door!
@@ -43,16 +48,25 @@ export const Travel = () => {
         <p>
           Here are some local taxi companies and their contact info <br />
           Booking in advance is advised
+          <br />
+          <FaArrowDown />
         </p>
+
         <ul>
           <li>
-            <MdLocalTaxi /> Falcon Taxis
+            <a href="https://falcontaxis.co.uk/">
+              <MdLocalTaxi /> Falcon Taxis
+            </a>
           </li>
           <li>
-            <MdLocalTaxi /> Neales Taxis
+            <a href="https://abctaxis247.co.uk/">
+              <MdLocalTaxi /> ABC Taxis
+            </a>
           </li>
           <li>
-            <MdLocalTaxi /> ABC Taxis
+            <a href="https://jettaxis.co.uk/">
+              <MdLocalTaxi /> Jet Taxis
+            </a>
           </li>
         </ul>
       </section>
