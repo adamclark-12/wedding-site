@@ -5,6 +5,7 @@ import Travel from "./Components/Travel";
 import Accomodation from "./Components/Accomodation";
 import Gifts from "./Components/Gifts";
 import RSVP from "./Components/RSVP";
+
 function App() {
   return (
     <div className="App">

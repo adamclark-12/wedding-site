@@ -149,6 +149,13 @@ button {
   margin-top: 2rem;
 }
 
+input {
+  padding: 20px 10px;
+  line-height: 20px;
+  border: 2px solid #555;
+  background-color: $backgroundColour;
+}
+
 ::placeholder {
   margin: 0;
   padding: 0;
