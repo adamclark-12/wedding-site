@@ -47,24 +47,24 @@ export const Travel = () => {
         <h1>TRAVEL - FROM</h1>
         <p>
           Here are some local taxi companies and their contact info <br />
-          Booking in advance is advised
+          Booking in advance might be best
           <br />
           <FaArrowDown />
         </p>
 
         <ul>
           <li>
-            <a href="https://falcontaxis.co.uk/">
+            <a className="btn btn-backg" href="https://falcontaxis.co.uk/">
               <MdLocalTaxi /> Falcon Taxis
             </a>
           </li>
           <li>
-            <a href="https://abctaxis247.co.uk/">
+            <a className="btn btn-backg" href="https://abctaxis247.co.uk/">
               <MdLocalTaxi /> ABC Taxis
             </a>
           </li>
           <li>
-            <a href="https://jettaxis.co.uk/">
+            <a className="btn btn-backg" href="https://jettaxis.co.uk/">
               <MdLocalTaxi /> Jet Taxis
             </a>
           </li>

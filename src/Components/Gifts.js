@@ -1,4 +1,5 @@
 import React from "react";
+import { FaArrowDown } from "react-icons/fa";
 
 export const Gifts = () => {
   return (
@@ -7,13 +8,15 @@ export const Gifts = () => {
         <h1>GIFTS</h1>
         <p>
           It's a gift in iteself just having you at our "special" day <br />
-          Buuuutttt, if you want to slip us some monies for a honeymoon/family
-          holiday
+          Buuuutttt <br /> if you want to slip us some monies for a
+          honeymoon/family holiday
           <br />
-          it would be most appreciated <br />
+          then that is very generous <br />
           <br />
           This link should do the job. <br />
-          <a className="gifts-button" href="PayPal.Me/fionaandadamswedding">
+          <FaArrowDown />
+          <br />
+          <a className="btn btn-backg" href="PayPal.Me/fionaandadamswedding">
             F & A wedding fund
           </a>
         </p>

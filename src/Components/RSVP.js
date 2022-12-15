@@ -21,12 +21,12 @@ const RSVP = () => {
 
         <form onSubmit={handleSubmit}>
           <label htmlFor="form-name">
-            <span className="bold-span">Name/s:</span>
+            <span className="bold-span">Name/s</span>
           </label>
           <input
             id="form-name"
             type="text"
-            placeholder="Names:"
+            placeholder="Names"
             required
           ></input>
           <ValidationError prefix="Names" field="names" errors={state.errors} />
@@ -51,13 +51,14 @@ const RSVP = () => {
             <span className="bold-span">Dietry requirments</span>
           </label>
           <input
-            id="form-name"
+            id="form-diet"
             type="text"
             placeholder="Anything we should know"
+            required
           ></input>
           <ValidationError
             prefix="DietryReq"
-            field="DietryReq"
+            field="dietryReq"
             errors={state.errors}
           />
 
@@ -74,10 +75,15 @@ const RSVP = () => {
             field="message"
             errors={state.errors}
           />
-
-          <button type="submit" disabled={state.submitting}>
-            Send
-          </button>
+          <div className="form-btn-div">
+            <button
+              className="form-btn btn-backg"
+              type="submit"
+              disabled={state.submitting}
+            >
+              Send
+            </button>
+          </div>
 
           <p>
             If there is any issues just phone, message or e-mail us on <br />

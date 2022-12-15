@@ -17,11 +17,11 @@ export const Home = () => {
         <br />
         <span className="bold-span">
           Get your beautiful selves there 20-30 minutes before kick off!
+          <br />
+          Love
+          <br />
+          Fiona and Adam
         </span>
-        <br />
-        Love
-        <br />
-        Fiona and Adam
       </p>
     </header>
   );

@@ -19,16 +19,28 @@
 $titleFont: "journal";
 $mainFont: "aaarghnormal";
 
-// ---------- mixin ----------
-
-@mixin insetBorders {
-  outline: 3px solid #606c38;
-  outline-offset: -20px;
-} //border mixin
-
 // ---------- site wide colours ----------
 $backgroundColour: whitesmoke;
 $mainTextColour: #2b283a;
+$autumColour: #638465;
+
+// ---------- mixin ----------
+
+@mixin insetBorders {
+  outline: 3px solid $autumColour;
+  outline-offset: -20px;
+} //border mixin
+
+@mixin button-bg($bg) {
+  background: $bg;
+  &:hover {
+    background: darken($bg, 10%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background: darken($bg, 25%);
+  }
+}
 
 .App {
   display: flex;
@@ -96,13 +108,21 @@ a {
   color: $mainTextColour;
 }
 a:hover {
-  color: green;
+  color: $autumColour;
 }
 
-.gifts-button {
-  border: solid black;
-  border-radius: 15px;
-  width: 50%;
+.btn {
+  text-decoration: underline;
+  padding: 5px 7px;
+  border-radius: 3px;
+  font-size: 1.2em;
+  border: $mainTextColour solid 2px;
+  color: $backgroundColour;
+  font-family: $mainFont;
+}
+
+.btn-backg {
+  @include button-bg($autumColour);
 }
 
 // <---------- layout ---------->
@@ -145,14 +165,14 @@ form {
   line-height: 4;
 }
 
-button {
-  margin-top: 2rem;
-}
+// button {
+//   margin-top: 2rem;
+// }
 
 input {
   padding: 20px 10px;
   line-height: 20px;
-  border: 2px solid #555;
+  border: 2px solid $autumColour;
   background-color: $backgroundColour;
 }
 
@@ -162,4 +182,23 @@ input {
   text-align: center;
   background-color: $backgroundColour;
   color: $mainTextColour;
+}
+
+.form-btn {
+  display: flex;
+  justify-content: center;
+
+  text-decoration: underline;
+  padding: 5px 7px;
+  border-radius: 3px;
+  font-size: 1.2em;
+  border: $mainTextColour solid 2px;
+  color: $backgroundColour;
+  width: 33%;
+  font-family: $mainFont;
+}
+.form-btn-div {
+  display: flex;
+  justify-content: center;
+  transform: translateY(2rem);
 }
