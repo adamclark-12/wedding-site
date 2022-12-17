@@ -8,7 +8,7 @@ export const Travel = () => {
       <section>
         <h1>TRAVEL - TO</h1>
         <p className="travel-p">
-          The venue adress is:
+          The venue address is:
           <a href="https://goo.gl/maps/5QmbBqsJ2ksWKtV26">
             {" "}
             <span className="bold-span">

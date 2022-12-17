@@ -6,7 +6,7 @@ export const Accomodation = () => {
   return (
     <div className="contianer">
       <section>
-        <h1>ACCOMODATION</h1>
+        <h1>ACCOMMODATION</h1>
         <p>
           There is plenty of hotels and BnB's around the venue. <br />
           Some places can be found in the links below <br />

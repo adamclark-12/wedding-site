@@ -1,17 +1,10 @@
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
-//import { useNavigate } from "react-router";
 
 const RSVP = () => {
-  //const navigate = useNavigate();
   const [state, handleSubmit] = useForm("xwkzdolj");
   if (state.succeeded) {
-    return (
-      <p>
-        Thank you for replying
-        {/* <button onclick={() => navigate(-1)}>Home</button> */}
-      </p>
-    );
+    return <p>Thank you for replying</p>;
   }
 
   return (
@@ -48,7 +41,7 @@ const RSVP = () => {
           />
 
           <label htmlFor="form-name">
-            <span className="bold-span">Dietry requirments</span>
+            <span className="bold-span">Dietary Requirements</span>
           </label>
           <input
             id="form-diet"
@@ -57,8 +50,8 @@ const RSVP = () => {
             required
           ></input>
           <ValidationError
-            prefix="DietryReq"
-            field="dietryReq"
+            prefix="DietaryReq"
+            field="dietaryReq"
             errors={state.errors}
           />
 
