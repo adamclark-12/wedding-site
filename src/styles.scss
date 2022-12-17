@@ -142,6 +142,7 @@ header {
   padding: 45px 0px;
   display: flex;
   justify-content: center;
+  min-height: 70vh;
 }
 
 // <---------- lists ---------->
@@ -202,3 +203,8 @@ input {
   justify-content: center;
   transform: translateY(2rem);
 }
+
+// <---------- screen sizes ---------->
+// @media(min-width : 750px){
+
+// }
