@@ -27,8 +27,8 @@ $autumColour: #638465;
 // ---------- mixin ----------
 
 @mixin insetBorders {
-  outline: 3px solid $autumColour;
-  outline-offset: -20px;
+  outline: 0.1875em solid $autumColour;
+  outline-offset: -0.8em;
 } //border mixin
 
 @mixin button-bg($bg) {
@@ -59,8 +59,8 @@ body {
 
 // <---------- home page layout and typography ---------->
 .title-contianer {
-  margin: 20px;
-  padding: 20px 0px;
+  margin: 1.25em;
+  padding: 1.25em 0em;
   font-family: $titleFont;
   display: flex;
   flex-direction: column;
@@ -68,30 +68,30 @@ body {
 }
 .title-h1 {
   margin: 0;
-  font-size: 100px;
+  font-size: 6.25em;
   font-weight: lighter;
 }
 
 .title-h3 {
   transform: translateY(-2.1rem);
-  font-size: 50px;
+  font-size: 3.125em;
   font-family: $titleFont;
 }
 
 // <---------- typography ---------->
 h1 {
-  font-size: 60px;
+  font-size: 3.75em;
   color: black;
   margin: 0;
 }
 
 h3 {
-  font-size: 64px;
+  font-size: 4em;
   margin: 0;
 }
 
 p {
-  font-size: 20px;
+  font-size: 1.25em;
   font-family: $mainFont;
 }
 
@@ -113,10 +113,10 @@ a:hover {
 
 .btn {
   text-decoration: underline;
-  padding: 5px 7px;
-  border-radius: 3px;
+  padding: 0.3125em 0.4375em;
+  border-radius: 0.1875em;
   font-size: 1.2em;
-  border: $mainTextColour solid 2px;
+  border: $mainTextColour solid 0.125em;
   color: $backgroundColour;
   font-family: $mainFont;
 }
@@ -125,26 +125,33 @@ a:hover {
   @include button-bg($autumColour);
 }
 
+iframe {
+  width: 80%;
+}
+
 // <---------- layout ---------->
 header {
   width: 66%;
   background-color: $backgroundColour;
-  padding: 45px 0px;
+  padding: 2.8125em 0px;
   font-family: $mainFont;
   margin: 0;
 }
 
 .contianer {
   @include insetBorders;
-  width: 63%;
+  width: 60%;
   background-color: $backgroundColour;
-  margin: 20px;
-  padding: 45px 0px;
+  margin: 1.25em;
+  padding: 2.8125em 0px;
   display: flex;
   justify-content: center;
   min-height: 70vh;
 }
 
+section {
+  width: 70%;
+}
 // <---------- lists ---------->
 ul {
   list-style: none;
@@ -171,9 +178,9 @@ form {
 // }
 
 input {
-  padding: 20px 10px;
-  line-height: 20px;
-  border: 2px solid $autumColour;
+  padding: 1.25em 0.625em;
+  line-height: 1.25em;
+  border: 0.125em solid $autumColour;
   background-color: $backgroundColour;
 }
 
@@ -190,10 +197,10 @@ input {
   justify-content: center;
 
   text-decoration: underline;
-  padding: 5px 7px;
-  border-radius: 3px;
+  padding: 0.3125em 0.4375em;
+  border-radius: 0.1875em;
   font-size: 1.2em;
-  border: $mainTextColour solid 2px;
+  border: $mainTextColour solid 0.125em;
   color: $backgroundColour;
   width: 33%;
   font-family: $mainFont;

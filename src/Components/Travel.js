@@ -9,7 +9,10 @@ export const Travel = () => {
         <h1>TRAVEL - TO</h1>
         <p className="travel-p">
           The venue address is:
-          <a href="https://goo.gl/maps/5QmbBqsJ2ksWKtV26">
+          <a
+            href="https://goo.gl/maps/5QmbBqsJ2ksWKtV26"
+            className="travel-map"
+          >
             {" "}
             <span className="bold-span">
               <br />
