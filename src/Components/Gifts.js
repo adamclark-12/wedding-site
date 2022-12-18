@@ -8,10 +8,9 @@ export const Gifts = () => {
         <h1>GIFTS</h1>
         <p>
           It's a gift in iteself just having you at our "special" day <br />
-          Buuuutttt <br /> if you want to slip us some monies for a
-          honeymoon/family holiday
+          Buuuutttt, <br /> if you want to slip us some monies for a
+          honeymoon/family holiday then that is very generous.
           <br />
-          then that is very generous <br />
           <br />
           This link should do the job. <br />
           <FaArrowDown />

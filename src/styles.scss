@@ -61,6 +61,8 @@ body {
 .title-contianer {
   margin: 1.25em;
   padding: 1.25em 0em;
+  width: 80%;
+  max-width: 800px;
   font-family: $titleFont;
   display: flex;
   flex-direction: column;
@@ -68,30 +70,30 @@ body {
 }
 .title-h1 {
   margin: 0;
-  font-size: 6.25em;
+  font-size: 6.25rem;
   font-weight: lighter;
 }
 
 .title-h3 {
   transform: translateY(-2.1rem);
-  font-size: 3.125em;
+  font-size: 3.125rem;
   font-family: $titleFont;
 }
 
 // <---------- typography ---------->
 h1 {
-  font-size: 3.75em;
+  font-size: 3.75rem;
   color: black;
   margin: 0;
 }
 
 h3 {
-  font-size: 4em;
+  font-size: 4rem;
   margin: 0;
 }
 
 p {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   font-family: $mainFont;
 }
 
@@ -115,7 +117,7 @@ a:hover {
   text-decoration: underline;
   padding: 0.3125em 0.4375em;
   border-radius: 0.1875em;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   border: $mainTextColour solid 0.125em;
   color: $backgroundColour;
   font-family: $mainFont;
@@ -125,8 +127,15 @@ a:hover {
   @include button-bg($autumColour);
 }
 
+// <---------- a , img , etc ---------->
+
 iframe {
   width: 80%;
+}
+
+img {
+  width: auto;
+  max-width: 80%;
 }
 
 // <---------- layout ---------->
@@ -140,13 +149,13 @@ header {
 
 .contianer {
   @include insetBorders;
-  width: 60%;
+  width: 70%;
+  max-width: 80%;
   background-color: $backgroundColour;
   margin: 1.25em;
   padding: 2.8125em 0px;
   display: flex;
   justify-content: center;
-  min-height: 70vh;
 }
 
 section {
@@ -173,13 +182,9 @@ form {
   line-height: 4;
 }
 
-// button {
-//   margin-top: 2rem;
-// }
-
 input {
   padding: 1.25em 0.625em;
-  line-height: 1.25em;
+  line-height: 2;
   border: 0.125em solid $autumColour;
   background-color: $backgroundColour;
 }
@@ -199,7 +204,7 @@ input {
   text-decoration: underline;
   padding: 0.3125em 0.4375em;
   border-radius: 0.1875em;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   border: $mainTextColour solid 0.125em;
   color: $backgroundColour;
   width: 33%;
@@ -212,6 +217,11 @@ input {
 }
 
 // <---------- screen sizes ---------->
-// @media(min-width : 750px){
-
-// }
+@media (max-width: 750px) {
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+  }
+}

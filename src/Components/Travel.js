@@ -54,7 +54,6 @@ export const Travel = () => {
           <br />
           <FaArrowDown />
         </p>
-
         <ul>
           <li>
             <a className="btn btn-backg" href="https://falcontaxis.co.uk/">
