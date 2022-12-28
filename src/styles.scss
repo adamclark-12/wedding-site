@@ -27,6 +27,7 @@ $autumColour: #638465;
 // ---------- mixin ----------
 
 @mixin insetBorders {
+  padding: 2em 1.5em;
   outline: 0.1875em solid $autumColour;
   outline-offset: -0.8em;
 } //border mixin
@@ -62,7 +63,7 @@ body {
   margin: 1.25em;
   padding: 1.25em 0em;
   width: 80%;
-  max-width: 800px;
+  max-width: 80vw;
   font-family: $titleFont;
   display: flex;
   flex-direction: column;
@@ -82,7 +83,8 @@ body {
 
 // <---------- typography ---------->
 h1 {
-  font-size: 3.75rem;
+  // font-size: 3.75rem;
+  font-size: calc(0.5rem + 3vw);
   color: black;
   margin: 0;
 }
@@ -149,18 +151,14 @@ header {
 
 .contianer {
   @include insetBorders;
-  width: 70%;
-  max-width: 80%;
+  width: 100%;
+  max-width: 80vw;
   background-color: $backgroundColour;
   margin: 1.25em;
-  padding: 2.8125em 0px;
   display: flex;
   justify-content: center;
 }
 
-section {
-  width: 70%;
-}
 // <---------- lists ---------->
 ul {
   list-style: none;
