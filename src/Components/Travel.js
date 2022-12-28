@@ -23,10 +23,9 @@ export const Travel = () => {
               <br /> Buckingham MK18 2HA
             </span>
           </a>
+          <p>There is plenty of on-site parking</p>
+          and you can leave your car there up to
           <br />
-          <br />
-          There is plenty of on-site parking
-          <br /> and you can leave your car there up to <br />
           <span className="underline-span">11am</span> on the sunday after.
         </p>
         <p className="travel-p">
