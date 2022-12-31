@@ -4,7 +4,7 @@ import { FaArrowDown } from "react-icons/fa";
 
 export const Travel = () => {
   return (
-    <div className="contianer">
+    <div className="container">
       <section>
         <h1>TRAVEL - TO</h1>
         <p className="travel-p">
@@ -23,10 +23,14 @@ export const Travel = () => {
               <br /> Buckingham MK18 2HA
             </span>
           </a>
-          <p>There is plenty of on-site parking</p>
-          and you can leave your car there up to
-          <br />
-          <span className="underline-span">11am</span> on the sunday after.
+          <p>
+            There is plenty of on-site parking and you can leave your car there
+            up to
+          </p>
+          <p>
+            <span className="underline-span">11am</span>
+          </p>
+          on the sunday after.
         </p>
         <p className="travel-p">
           Below you will find a map to the venue.

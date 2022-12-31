@@ -2,7 +2,7 @@ import React from "react";
 
 export const Home = () => {
   return (
-    <header className="title-contianer">
+    <header className="title-container">
       <h1 className="title-h1">Fiona & Adam</h1>
       <h3 className="title-h3">11.11.23</h3>
       <p>Hopefully below will be all the information you need.</p>
@@ -12,7 +12,7 @@ export const Home = () => {
       </p>
       <p>We hope you can make it and celebrate with us on our big day!</p>
       <p>
-        <img src="weddingTimeline.jpg" alt="Wedding timeline"></img>
+        <img src="WEDDING TIMELINE 1-01.png" alt="Wedding timeline"></img>
       </p>
       <p>
         <span className="bold-span">

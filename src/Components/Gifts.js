@@ -3,7 +3,7 @@ import { FaArrowDown } from "react-icons/fa";
 
 export const Gifts = () => {
   return (
-    <div className="contianer">
+    <div className="container">
       <section>
         <h1>GIFTS</h1>
         <p>It's a gift in iteself just having you at our "special" day</p>

@@ -4,11 +4,11 @@ import { useForm, ValidationError } from "@formspree/react";
 const RSVP = () => {
   const [state, handleSubmit] = useForm("xwkzdolj");
   if (state.succeeded) {
-    return <p>Thank you for replying</p>;
+    return <p className="container">Thank you for replying</p>;
   }
 
   return (
-    <div className="contianer">
+    <div className="container">
       <section>
         <h1 className="rsvp-title">RSVP</h1>
 
@@ -28,7 +28,9 @@ const RSVP = () => {
             <label htmlFor="form-reply">
               <span className="bold-span">Would love to attend!</span>
             </label>
+
             <input id="form-reply" type="radio" name="answer"></input>
+            <br />
             <label htmlFor="form-reply">
               <span className="bold-span">Sadly can't make it</span>
             </label>

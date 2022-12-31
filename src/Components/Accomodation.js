@@ -4,7 +4,7 @@ import { MdLocalHotel } from "react-icons/md";
 
 export const Accomodation = () => {
   return (
-    <div className="contianer">
+    <div className="container">
       <section>
         <h1>ACCOMMODATION</h1>
         <p>

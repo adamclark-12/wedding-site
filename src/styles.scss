@@ -59,7 +59,7 @@ body {
 }
 
 // <---------- home page layout and typography ---------->
-.title-contianer {
+.title-container {
   margin: 1.25em;
   padding: 1.25em 0em;
   width: 80%;
@@ -71,13 +71,15 @@ body {
 }
 .title-h1 {
   margin: 0;
-  font-size: 6.25rem;
+  font-size: calc(4.5rem + 3vw);
+  //font-size: 6.25rem;
   font-weight: lighter;
+  line-height: 1;
 }
 
 .title-h3 {
-  transform: translateY(-2.1rem);
   font-size: 3.125rem;
+  line-height: 1;
   font-family: $titleFont;
 }
 
@@ -95,7 +97,9 @@ h3 {
 }
 
 p {
-  font-size: 1.25rem;
+  //font-size: 1.25rem;
+  font-size: calc(0.5rem + 1.7vw);
+
   font-family: $mainFont;
 }
 
@@ -149,7 +153,7 @@ header {
   margin: 0;
 }
 
-.contianer {
+.container {
   @include insetBorders;
   width: 100%;
   max-width: 80vw;
@@ -220,6 +224,11 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1em;
+    padding: 0.1em;
+    margin: 0;
+  }
+  a {
+    padding: 0;
+    margin: 0;
   }
 }
