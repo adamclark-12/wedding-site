@@ -70,15 +70,16 @@ const RSVP = () => {
             field="message"
             errors={state.errors}
           />
-          <div className="form-btn-div">
-            <button
-              className="form-btn btn-backg"
-              type="submit"
-              disabled={state.submitting}
-            >
-              Send
-            </button>
-          </div>
+          {/* <div className="form-btn-div"> */}
+          <br />
+          <button
+            className=" btn-backg  btn"
+            type="submit"
+            disabled={state.submitting}
+          >
+            Send
+          </button>
+          {/* </div> */}
 
           <p>
             If there is any issues just phone, message or e-mail us on <br />
