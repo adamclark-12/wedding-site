@@ -189,6 +189,7 @@ input {
   line-height: 2;
   border: 0.125em solid $autumColour;
   background-color: $backgroundColour;
+  font-size: calc(0.2rem + 1.4vw);
 }
 
 ::placeholder {
@@ -234,6 +235,12 @@ input {
   }
   .form-btn-div {
     transform: translateY(0.5rem);
+  }
+  .title-container {
+    max-width: 70vw;
+  }
+  .container {
+    max-width: 70vw;
   }
 }
 @media (max-width: 1024px) {

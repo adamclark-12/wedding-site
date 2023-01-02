@@ -63,7 +63,7 @@ const RSVP = () => {
           <input
             id="form-name"
             type="text"
-            placeholder="Favourite song you want to hear on our wedding"
+            placeholder="Favourite song you want to hear?"
           ></input>
           <ValidationError
             prefix="Message"
