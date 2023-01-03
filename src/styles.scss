@@ -182,6 +182,7 @@ form {
   flex-direction: column;
   text-align: center;
   line-height: 4;
+  font: $mainFont;
 }
 
 input {
@@ -189,7 +190,16 @@ input {
   line-height: 2;
   border: 0.125em solid $autumColour;
   background-color: $backgroundColour;
+  font-size: calc(0.2rem + 0.8vw);
+}
+
+textarea {
+  padding: 1.25em 0.625em;
+  line-height: 2;
+  border: 0.125em solid $autumColour;
+  background-color: $backgroundColour;
   font-size: calc(0.2rem + 1.4vw);
+  font-family: $mainFont;
 }
 
 ::placeholder {

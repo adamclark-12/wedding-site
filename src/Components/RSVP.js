@@ -4,7 +4,7 @@ import { useForm, ValidationError } from "@formspree/react";
 const RSVP = () => {
   const [state, handleSubmit] = useForm("xwkzdolj");
   if (state.succeeded) {
-    return <p className="container">Thank you for replying</p>;
+    return <div className="container">Thank you for replying</div>;
   }
 
   return (
@@ -16,12 +16,12 @@ const RSVP = () => {
           <label htmlFor="form-name">
             <span className="bold-span">Name/s</span>
           </label>
-          <input
+          <textarea
             id="form-name"
             type="text"
             placeholder="Names"
             required
-          ></input>
+          ></textarea>
           <ValidationError prefix="Names" field="names" errors={state.errors} />
 
           <div className="respond-div">
@@ -42,29 +42,29 @@ const RSVP = () => {
             errors={state.errors}
           />
 
-          <label htmlFor="form-name">
+          <label htmlFor="form-diet">
             <span className="bold-span">Dietary Requirements</span>
           </label>
-          <input
+          <textarea
             id="form-diet"
             type="text"
             placeholder="Anything we should know"
             required
-          ></input>
+          ></textarea>
           <ValidationError
             prefix="DietaryReq"
             field="dietaryReq"
             errors={state.errors}
           />
 
-          <label htmlFor="form-name">
+          <label htmlFor="form-song">
             <span className="bold-span">Song?</span>
           </label>
-          <input
+          <textarea
             id="form-name"
             type="text"
             placeholder="Favourite song you want to hear?"
-          ></input>
+          ></textarea>
           <ValidationError
             prefix="Message"
             field="message"
