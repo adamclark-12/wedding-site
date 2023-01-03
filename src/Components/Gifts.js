@@ -15,7 +15,10 @@ export const Gifts = () => {
         <p>This link should do the job.</p>
         <FaArrowDown />
         <p>
-          <a className="btn btn-backg" href="PayPal.Me/fionaandadamswedding">
+          <a
+            className="btn btn-backg"
+            href="https://paypal.me/fionaandadamswedding?country.x=GB&locale.x=en_GB"
+          >
             F & A wedding fund
           </a>
         </p>
