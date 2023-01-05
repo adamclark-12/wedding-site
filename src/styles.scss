@@ -78,7 +78,7 @@ body {
 }
 
 .title-h3 {
-  font-size: calc(2rem + 3vw);
+  font-size: calc(2rem + 2.5vw);
   line-height: 1;
   font-family: $titleFont;
 }
@@ -204,7 +204,7 @@ textarea {
   line-height: 2;
   border: 0.125em solid $autumColour;
   background-color: $backgroundColour;
-  font-size: calc(0.2rem + 1.4vw);
+  font-size: calc(1rem + 0.1vw);
   font-family: $mainFont;
 }
 
