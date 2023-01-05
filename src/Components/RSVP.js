@@ -20,7 +20,7 @@ function RSVP() {
             id="form-name"
             type="text"
             placeholder="Names"
-            name="name"
+            name="Names"
             required
           ></textarea>
           <ValidationError field="names" prefix="Names" errors={state.errors} />
@@ -32,14 +32,24 @@ function RSVP() {
             <label htmlFor="form-reply">
               <span className="">Would love to attend!</span>
             </label>
-            <input id="form-reply" type="radio" name="answer"></input>
+            <input
+              id="form-reply-yes"
+              type="radio"
+              name="Answer"
+              value="Can attend"
+            ></input>
 
             <br />
 
             <label htmlFor="form-reply">
               <span className="">Sadly can't make it</span>
             </label>
-            <input id="form-reply" type="radio" name="answer"></input>
+            <input
+              id="form-reply-no"
+              type="radio"
+              name="Answer"
+              value="Cannot attend"
+            ></input>
             <ValidationError
               field="response"
               prefix="Response"
@@ -56,7 +66,7 @@ function RSVP() {
             id="form-diet"
             type="text"
             placeholder="Anything dietary requirements we should know?"
-            name="Dietary require"
+            name="Dietary requirements"
             required
           ></textarea>
           <ValidationError
@@ -72,7 +82,7 @@ function RSVP() {
             id="form-name"
             type="text"
             placeholder="Favourite song you want to hear?"
-            name="Fav song"
+            name="Favourite song"
           ></textarea>
           <ValidationError
             field="message"
