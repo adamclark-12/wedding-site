@@ -71,14 +71,14 @@ body {
 }
 .title-h1 {
   margin: 0;
-  font-size: calc(4.5rem + 3vw);
+  font-size: calc(2.5rem + 3vw);
   //font-size: 6.25rem;
   font-weight: lighter;
   line-height: 1;
 }
 
 .title-h3 {
-  font-size: 3.125rem;
+  font-size: calc(2rem + 3vw);
   line-height: 1;
   font-family: $titleFont;
 }
@@ -98,7 +98,7 @@ h3 {
 
 p {
   //font-size: 1.25rem;
-  font-size: calc(0.5rem + 1.7vw);
+  font-size: calc(0.5rem + 1.5vw);
   font-family: $mainFont;
 }
 
@@ -135,8 +135,10 @@ a:hover {
 // <---------- a , img , etc ---------->
 
 iframe {
-  width: 60%;
-  max-width: 100%;
+  width: 45vw;
+  max-width: 90vw;
+  height: 40vh;
+  max-height: 100vh;
 }
 
 img {
@@ -171,17 +173,17 @@ ul {
   display: inline;
 }
 
-li {
-  display: inline;
-  margin-left: 2em;
-}
+// li {
+//   //display: inline;
+//   //margin-left: 2em;
+// }
 
 // <---------- forms ---------->
 form {
   display: flex;
   flex-direction: column;
   text-align: center;
-  line-height: 4;
+  line-height: 3;
   font: $mainFont;
 }
 
@@ -191,6 +193,10 @@ input {
   border: 0.125em solid $autumColour;
   background-color: $backgroundColour;
   font-size: calc(0.2rem + 0.8vw);
+}
+
+label {
+  font-size: calc(1rem + 1vw);
 }
 
 textarea {
@@ -223,6 +229,11 @@ textarea {
   font-family: $mainFont;
   //transform: translateY(0.5rem);
 }
+
+.respond-div {
+  line-height: 1.4;
+  padding-top: 1em;
+}
 // .form-btn-div {
 //   display: flex;
 //   flex-direction: column;
@@ -231,7 +242,7 @@ textarea {
 // }
 
 // <---------- screen sizes ---------->
-@media (max-width: 750px) {
+@media (min-width: 750px) {
   li {
     display: flex;
     flex-direction: column;
@@ -253,7 +264,7 @@ textarea {
     max-width: 70vw;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
   .title-container {
     max-width: 60vw;
   }
@@ -261,13 +272,13 @@ textarea {
     max-width: 60vw;
   }
   p {
-    font-size: calc(0.1rem + 1.5vw);
+    font-size: calc(0.5rem + 1vw);
   }
   .form-btn-div {
     transform: translateY(0.7rem);
   }
 }
-@media (max-width: 1025px) {
+@media (min-width: 1025px) {
   .title-container {
     max-width: 60vw;
   }
@@ -275,7 +286,7 @@ textarea {
     max-width: 60vw;
   }
   p {
-    font-size: calc(0.1rem + 1.5vw);
+    font-size: calc(0.5rem + 1vw);
   }
   .form-btn-div {
     transform: translateY(0.7rem);

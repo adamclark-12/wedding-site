@@ -1,7 +1,7 @@
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 
-const RSVP = () => {
+function RSVP() {
   const [state, handleSubmit] = useForm("xwkzdolj");
   if (state.succeeded) {
     return <div className="container">Thank you for replying</div>;
@@ -14,25 +14,30 @@ const RSVP = () => {
 
         <form onSubmit={handleSubmit}>
           <label htmlFor="form-name">
-            <span className="bold-span">Name/s</span>
+            <span className="bold-span underline-span">Name/s</span>
           </label>
           <textarea
             id="form-name"
             type="text"
             placeholder="Names"
+            name="name"
             required
           ></textarea>
           <ValidationError prefix="Names" field="names" errors={state.errors} />
 
           <div className="respond-div">
-            <label htmlFor="form-reply">
-              <span className="bold-span">Would love to attend!</span>
-            </label>
+            <label className="bold-span underline-span">RSVP</label>
 
-            <input id="form-reply" type="radio" name="answer"></input>
             <br />
             <label htmlFor="form-reply">
-              <span className="bold-span">Sadly can't make it</span>
+              <span className="">Would love to attend!</span>
+            </label>
+            <input id="form-reply" type="radio" name="answer"></input>
+
+            <br />
+
+            <label htmlFor="form-reply">
+              <span className="">Sadly can't make it</span>
             </label>
             <input id="form-reply" type="radio" name="answer"></input>
           </div>
@@ -43,12 +48,14 @@ const RSVP = () => {
           />
 
           <label htmlFor="form-diet">
-            <span className="bold-span">Dietary Requirements</span>
+            <span className="bold-span underline-span">
+              Dietary Requirements
+            </span>
           </label>
           <textarea
             id="form-diet"
             type="text"
-            placeholder="Anything we should know"
+            placeholder="Anything dietary requirements we should know?  "
             required
           ></textarea>
           <ValidationError
@@ -58,7 +65,7 @@ const RSVP = () => {
           />
 
           <label htmlFor="form-song">
-            <span className="bold-span">Song?</span>
+            <span className="bold-span underline-span">Song?</span>
           </label>
           <textarea
             id="form-name"
@@ -89,5 +96,5 @@ const RSVP = () => {
       </section>
     </div>
   );
-};
+}
 export default RSVP;
