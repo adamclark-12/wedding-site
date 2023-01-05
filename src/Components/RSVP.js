@@ -23,7 +23,7 @@ function RSVP() {
             name="name"
             required
           ></textarea>
-          <ValidationError prefix="Names" field="names" errors={state.errors} />
+          <ValidationError field="names" prefix="Names" errors={state.errors} />
 
           <div className="respond-div">
             <label className="bold-span underline-span">RSVP</label>
@@ -40,12 +40,12 @@ function RSVP() {
               <span className="">Sadly can't make it</span>
             </label>
             <input id="form-reply" type="radio" name="answer"></input>
+            <ValidationError
+              field="response"
+              prefix="Response"
+              errors={state.errors}
+            />
           </div>
-          <ValidationError
-            prefix="Response"
-            field="response"
-            errors={state.errors}
-          />
 
           <label htmlFor="form-diet">
             <span className="bold-span underline-span">
@@ -55,12 +55,13 @@ function RSVP() {
           <textarea
             id="form-diet"
             type="text"
-            placeholder="Anything dietary requirements we should know?  "
+            placeholder="Anything dietary requirements we should know?"
+            name="Dietary require"
             required
           ></textarea>
           <ValidationError
-            prefix="DietaryReq"
             field="dietaryReq"
+            prefix="DietaryReq"
             errors={state.errors}
           />
 
@@ -71,13 +72,14 @@ function RSVP() {
             id="form-name"
             type="text"
             placeholder="Favourite song you want to hear?"
+            name="Fav song"
           ></textarea>
           <ValidationError
-            prefix="Message"
             field="message"
+            prefix="Message"
             errors={state.errors}
           />
-          {/* <div className="form-btn-div"> */}
+
           <br />
           <button
             className=" btn-backg  btn"
@@ -86,7 +88,6 @@ function RSVP() {
           >
             Send
           </button>
-          {/* </div> */}
 
           <p>
             If there is any issues just phone, message or e-mail us on <br />

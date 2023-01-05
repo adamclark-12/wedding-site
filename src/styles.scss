@@ -113,6 +113,7 @@ p {
 // <---------- links ---------->
 a {
   color: $mainTextColour;
+  font-size: px;
 }
 a:hover {
   color: $autumColour;
@@ -172,11 +173,6 @@ ul {
   padding: 0;
   display: inline;
 }
-
-// li {
-//   //display: inline;
-//   //margin-left: 2em;
-// }
 
 // <---------- forms ---------->
 form {
