@@ -8,7 +8,7 @@ export const Accomodation = () => {
       <section>
         <h1>ACCOMMODATION</h1>
         <p>
-          There is plenty of hotels and BnB's around the venue. <br />
+          There are plenty of hotels and BnB's around the venue. <br />
           Some places can be found in the links below <br />
           <FaArrowDown />
         </p>
