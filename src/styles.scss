@@ -1,5 +1,10 @@
 /*
 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 // <---------- Font - faces ---------->
 @font-face {

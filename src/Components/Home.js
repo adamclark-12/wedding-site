@@ -15,6 +15,15 @@ export const Home = () => {
         <img src="WEDDING TIMELINE 1-01.png" alt="Wedding timeline"></img>
       </p>
       <p>
+        <span className="bold-span underline-span ">Adults only please.</span>
+      </p>
+      <p>
+        <span className="bold-span ">
+          You deserve a night away from the kids! Leave them with the
+          grandparents!
+        </span>
+      </p>
+      <p>
         <span className="bold-span">
           Get your beautiful selves there 20-30 minutes before kick off!
           <br />
