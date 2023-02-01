@@ -23,16 +23,14 @@ export const Home = () => {
         </span>
       </p>
       <p>
-        <span className="bold-span">
-          <span className="underline-span">Ceremony guests</span> - Get your
-          beautiful selves there 20-30 minutes before kick off!
-          <br />
-          <span className="underline-span">Evening guests</span> - Arrive for a
-          party and piss up at 7pm!
-          <br />
-          <p>Lots of love</p>
-          <p>Fiona and Adam</p>
-        </span>
+        <span className="underline-span bold-span">Ceremony guests</span> - Get
+        your beautiful selves there 20-30 minutes before kick off!
+        <br />
+        <span className="underline-span bold-span">Evening guests</span> -
+        Arrive for a party and piss up at 7pm!
+        <br />
+        <p>Lots of love</p>
+        <p>Fiona and Adam</p>
       </p>
     </header>
   );
