@@ -19,17 +19,19 @@ export const Home = () => {
       </p>
       <p>
         <span className="bold-span ">
-          You deserve a night away from the kids! Leave them with the
-          grandparents!
+          You deserve a night away from the kids! And a few drinks with us!
         </span>
       </p>
       <p>
         <span className="bold-span">
-          Get your beautiful selves there 20-30 minutes before kick off!
+          <span className="underline-span">Ceremony guests</span> - Get your
+          beautiful selves there 20-30 minutes before kick off!
           <br />
-          Love
+          <span className="underline-span">Evening guests</span> - Arrive for a
+          party and piss up at 7pm!
           <br />
-          Fiona and Adam
+          <p>Lots of love</p>
+          <p>Fiona and Adam</p>
         </span>
       </p>
     </header>
