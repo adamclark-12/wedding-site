@@ -17,11 +17,7 @@ export const Home = () => {
       <p>
         <span className="bold-span underline-span ">Adults only please.</span>
       </p>
-      <p>
-        <span className="bold-span ">
-          You deserve a night away from the kids! And a few drinks with us!
-        </span>
-      </p>
+      <p>You deserve a night away from the kids! And a few drinks with us!</p>
       <p>
         <span className="underline-span bold-span">Ceremony guests</span> - Get
         your beautiful selves there 20-30 minutes before kick off!
