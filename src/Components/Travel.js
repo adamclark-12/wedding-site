@@ -24,6 +24,11 @@ export const Travel = () => {
             </span>
           </a>
           <p>
+            What3Words or google maps is your best bet of getting the closest
+            directions to the venue as Iphone maps doesn't like to take you to
+            the front door
+          </p>
+          <p>
             There is plenty of on-site parking and you can leave your car there
             up to
           </p>

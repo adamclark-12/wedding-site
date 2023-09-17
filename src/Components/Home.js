@@ -15,11 +15,6 @@ export const Home = () => {
         <img src="weddingTimelineMK2.jpeg" alt="Wedding timeline"></img>
       </p>
       <p>
-        What3Words or google maps is your best bet of getting the closest
-        directions to the venue as Iphone maps doesn't like to take you to the
-        front door?
-      </p>
-      <p>
         <span className="bold-span underline-span ">Adults only please.</span>
       </p>
       <p>You deserve a night away from the kids! And a few drinks with us!</p>
