@@ -12,7 +12,12 @@ export const Home = () => {
       </p>
       <p>We hope you can make it and celebrate with us on our big day!</p>
       <p>
-        <img src="WEDDING TIMELINE 1-01.png" alt="Wedding timeline"></img>
+        <img src="weddingTimelineMK2.jpeg" alt="Wedding timeline"></img>
+      </p>
+      <p>
+        What3Words or google maps is your best bet of getting the closest
+        directions to the venue as Iphone maps doesn't like to take you to the
+        front door?
       </p>
       <p>
         <span className="bold-span underline-span ">Adults only please.</span>
